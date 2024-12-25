@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload and Crop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css"
+    />
+  </head>
+  <body>
+    <!-- Upload Section Starts -->
+    <section class="upload-section">
+      <div class="upload-hdn">Upload Here</div>
+      <div class="upload-here">
+        <div class="full-img">
+          <img
+            src="./img/attending.png"
+            alt="Full Image"
+            id="full-img"
+            crossorigin="anonymous"
+          />
+        </div>
+
+        <div class="upload-preview">
+          <img id="frame-img" alt="Uploaded Preview" />
+        </div>
+      </div>
+      <input
+        type="file"
+        id="upload-input"
+        style="display: none"
+        accept="image/*"
+      />
+      <button class="button" id="upload-btn">Upload Your Image</button>
+      <button class="button" id="download-btn" style="display: none">
+        Download Images
+      </button>
+    </section>
+    <!-- Upload Section Ends -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
