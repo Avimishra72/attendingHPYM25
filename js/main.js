@@ -36,7 +36,7 @@ uploadInput.addEventListener('change', (event) => {
             cropperImg.src = e.target.result;
             cropperModal.classList.remove('hidden');
             cropper = new Cropper(cropperImg, {
-                aspectRatio: 1,
+                aspectRatio: 4/3,
                 viewMode: 1,
                 responsive: true,
                 restore: true
